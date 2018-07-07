@@ -1,0 +1,59 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<view class="container">
+    <view class="main-item">
+        <view class="main-item-t">
+            <view class="main-item-t-t">
+                <view class="main-item-t-t-item main-item-t-t-l">
+                    <image class="headImg"
+                           src="{{detailInfo.author.avatar_url}}"
+                           lazy-load="{{true}}"
+                           alt="{{detailInfo.author.loginname}}">
+                    </image>
+                </view>
+                <view class="main-item-t-t-item main-item-t-t-m">
+                    <view class="userName">{{detailInfo.author.loginname}}</view>
+                    <view class="created">{{filter.formatTime(detailInfo.create_at)}}</view>
+                </view>
+                <view class="main-item-t-t-item main-item-t-t-r">
+                    <view class="topic-tab {{detailInfo.top ? 'bg-red' : 'bg-ddd'}}" wx:if="{{detailInfo.top}}">置顶
+                    </view>
+                    <view class="topic-tab {{detailInfo.top ? 'bg-red' : 'bg-ddd'}}" wx:else>
+                        {{filter.navValueToName(detailInfo.tab,navList)}}
+                    </view>
+                </view>
+            </view>
+            <view class="main-item-t-m">
+                <view class="main-item-t-m-title">{{detailInfo.title}}</view>
+            </view>
+        </view>
+        <view class="main-item-m">
+            <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+        </view>
+    </view>
+    <view class="main-item main-replies">
+        <view class="main-item-t" wx:for="{{detailInfo.replies}}" wx:key="item.id">
+            <view class="main-item-t-t">
+                <view class="main-item-t-t-item main-item-t-t-l">
+                    <image class="headImg"
+                           src="{{item.author.avatar_url}}"
+                           lazy-load="{{true}}"
+                           alt="{{item.author.loginname}}">
+                    </image>
+                </view>
+                <view class="main-item-t-t-item main-item-t-t-m">
+                    <view class="userName">{{item.author.loginname}}</view>
+                    <view class="created">{{filter.formatTime(item.create_at)}}</view>
+                </view>
+                <view class="main-item-t-t-item main-item-t-t-r">
+                    点赞
+                </view>
+            </view>
+            <view class="main-item-t-m">
+                <rich-text class="main-item-t-m-title" nodes="{{item.content}}">
+
+                </rich-text>
+            </view>
+        </view>
+    </view>
+</view>

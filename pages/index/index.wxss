@@ -1,0 +1,87 @@
+/*nav css*/
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .nav-bar .nav-item {
+    flex: 1;
+    height: 82rpx;
+    line-height: 82rpx;
+    text-align: center;
+    font-size: 34rpx; }
+  .nav-bar .active {
+    color: #09c; }
+
+/*main css*/
+.main {
+  background: #ececec;
+  height: 966rpx;
+  padding-top: 8rpx; }
+  .main .main-item {
+    background: #fff;
+    margin-bottom: 14rpx; }
+    .main .main-item .main-item-t {
+      padding-bottom: 16rpx; }
+      .main .main-item .main-item-t .main-item-t-t {
+        display: flex; }
+        .main .main-item .main-item-t .main-item-t-t .main-item-t-t-l {
+          width: 80rpx; }
+          .main .main-item .main-item-t .main-item-t-t .main-item-t-t-l .headImg {
+            width: 70rpx;
+            height: 70rpx;
+            margin: 10rpx;
+            border-radius: 14rpx; }
+        .main .main-item .main-item-t .main-item-t-t .main-item-t-t-m {
+          flex: auto;
+          padding: 0 20rpx; }
+          .main .main-item .main-item-t .main-item-t-t .main-item-t-t-m .userName {
+            color: #0745c1;
+            font-size: 34rpx; }
+          .main .main-item .main-item-t .main-item-t-t .main-item-t-t-m .created {
+            color: #999;
+            font-size: 26rpx; }
+        .main .main-item .main-item-t .main-item-t-t .main-item-t-t-r {
+          width: 100rpx; }
+          .main .main-item .main-item-t .main-item-t-t .main-item-t-t-r .topic-tab {
+            width: 70rpx;
+            height: 50rpx;
+            color: #fff;
+            border-radius: 14rpx;
+            font-size: 28rpx;
+            text-align: center;
+            line-height: 50rpx;
+            margin: 16rpx auto; }
+      .main .main-item .main-item-t .main-item-t-m {
+        padding: 0 20rpx; }
+        .main .main-item .main-item-t .main-item-t-m .main-item-t-m-title {
+          color: #333;
+          font-weight: 600;
+          margin-bottom: 8rpx;
+          font-size: 32rpx; }
+        .main .main-item .main-item-t .main-item-t-m .main-item-t-m-decription {
+          font-szie: 26rpx;
+          color: #666;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical; }
+    .main .main-item .main-item-b {
+      border-top: 1px solid #ececec;
+      padding: 16rpx 40rpx; }
+      .main .main-item .main-item-b .iconfont {
+        width: 26rpx;
+        height: 26rpx;
+        color: #666; }
+      .main .main-item .main-item-b .main-item-b-item {
+        margin: 0 20rpx 20rpx 6rpx;
+        color: #999;
+        font-size: 26rpx; }
+  .main .loadMore {
+    color: #999;
+    font-size: rpx;
+    text-align: center;
+    padding: 20rpx; }
+
+/*# sourceMappingURL=index.wxss.map */

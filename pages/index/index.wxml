@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<view class="container">
+    <view class="nav-bar">
+        <view wx:for="{{navList}}"
+              wx:key="{{item.value}}"
+              data-value="{{item.value}}"
+              class="nav-item {{item.value == activeValue ? 'active' : ''}}"
+              bindtap="navHandler">
+            {{item.lable}}
+        </view>
+    </view>
+    <view class="main">
+        <view wx:for="{{topicList}}" wx:key="item.id" class="main-item">
+            <navigator url="/pages/topicDetail/topicDetail?id={{item.id}}">
+                <view class="main-item-t">
+                    <view class="main-item-t-t">
+                        <view class="main-item-t-t-item main-item-t-t-l">
+                            <image class="headImg"
+                                   src="{{item.author.avatar_url}}"
+                                   lazy-load="{{true}}"
+                                   alt="{{ite.author.loginname}}">
+                            </image>
+                        </view>
+                        <view class="main-item-t-t-item main-item-t-t-m">
+                            <view class="userName">{{item.author.loginname}}</view>
+                            <view class="created">{{filter.formatTime(item.create_at)}}</view>
+                        </view>
+                        <view class="main-item-t-t-item main-item-t-t-r">
+                            <view class="topic-tab {{item.top ? 'bg-red' : 'bg-ddd'}}" wx:if="{{item.top}}">置顶
+                            </view>
+                            <view class="topic-tab {{item.top ? 'bg-red' : 'bg-ddd'}}" wx:else>
+                                {{filter.navValueToName(item.tab,navList)}}
+                            </view>
+                        </view>
+                    </view>
+                    <view class="main-item-t-m">
+                        <view class="main-item-t-m-title">{{item.title}}</view>
+                        <view class="main-item-t-m-decription">文章描述,关键是没有这个字段是什么鬼，我也很无奈，暂时先这样显示吧。</view>
+                    </view>
+                </view>
+                <view class="main-item-b">
+                    <text class="iconfont icon-pinglun"></text>
+                    <text class="main-item-b-item">{{item.reply_count}}</text>
+                    <text class="iconfont icon-yanjing"></text>
+                    <text class="main-item-b-item">{{item.visit_count}}</text>
+                    <text class="iconfont icon-clock"></text>
+                    <text class="main-item-b-item">{{filter.formatTime(item.last_reply_at)}}</text>
+                </view>
+            </navigator>
+        </view>
+        <view class="loadMore">{{showLoadMore ? '正在加载...' : '我们是有底线的~'}}</view>
+    </view>
+</view>

@@ -1,0 +1,68 @@
+ul,ol{
+  list-style: none;
+}
+.main-item {
+  background: #fff;
+  .main-item-t {
+    padding-bottom:16rpx;
+    .main-item-t-t {
+      display: flex;
+      .main-item-t-t-l{
+        width:80rpx;
+        .headImg{
+          width:70rpx;
+          height:70rpx;
+          margin:10rpx;
+          border-radius:14rpx;
+        }
+      }
+      .main-item-t-t-m{
+        flex:auto;
+        padding:0 20rpx;
+        .userName{
+          color:#0745c1;
+          font-size:34rpx;
+        }
+        .created{
+          color:#999;
+          font-size:26rpx;
+        }
+      }
+      .main-item-t-t-r{
+        width:100rpx;
+        .topic-tab{
+          width:70rpx;
+          height:50rpx;
+          color:#fff;
+          border-radius:14rpx;
+          font-size:28rpx;
+          text-align:center;
+          line-height:50rpx;
+          margin:16rpx auto;
+        }
+      }
+    }
+    .main-item-t-m{
+      padding:0 20rpx;
+      .main-item-t-m-title{
+        color:#333;
+        font-weight:600;
+        padding-bottom:14rpx;
+        font-size:32rpx;
+        border-bottom:1px solid #ececec;
+      }
+    }
+  }
+  .main-item-m{
+    padding:0 14rpx;
+  }
+}
+.main-replies{
+  margin-top:20rpx;
+  border-top:20rpx solid #ececec;
+  .main-item-t-m{
+    min-height:100rpx;
+    padding:14rpx 20rpx;
+    border-bottom:1px solid #ececec;
+  }
+}

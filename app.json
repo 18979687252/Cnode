@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/topicDetail/topicDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0099cc",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#444",
+    "selectedColor": "#008d22",
+    "backgroundColor":"#f7f7f7",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"images/bar/home.png",
+      "selectedIconPath":"images/bar/homeHL.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "发帖",
+      "iconPath":"images/bar/edit.png",
+      "selectedIconPath":"images/bar/editHL.png"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "消息",
+      "iconPath":"images/bar/message.png",
+      "selectedIconPath":"images/bar/messageHL.png"
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "用户",
+      "iconPath":"images/bar/user.png",
+      "selectedIconPath":"images/bar/userHL.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
