@@ -49,6 +49,6 @@
                 </view>
             </navigator>
         </view>
-        <view class="loadMore">{{showLoadMore ? '正在加载...' : '我们是有底线的~'}}</view>
     </view>
+    <view class="loadMore" wx:if="{{topicList.length}}">{{showLoadMore ? '正在加载...' : '我们是有底线的~'}}</view>
 </view>

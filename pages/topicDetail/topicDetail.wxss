@@ -50,7 +50,13 @@ ul, ol {
   border-top: 20rpx solid #ececec; }
   .main-replies .main-item-t-m {
     min-height: 100rpx;
-    padding: 14rpx 20rpx;
     border-bottom: 1px solid #ececec; }
+  .main-replies .main-item-t-t-r {
+    text-align: center;
+    color: #999;
+    font-size: 28rpx; }
+    .main-replies .main-item-t-t-r .topic-zan {
+      width: 36rpx;
+      height: 36rpx; }
 
 /*# sourceMappingURL=topicDetail.wxss.map */

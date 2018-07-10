@@ -1,15 +1,17 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/sendPage/sendPage",
+    "pages/message/message",
     "pages/profile/profile",
-    "pages/topicDetail/topicDetail"
+    "pages/topicDetail/topicDetail",
+    "pages/login/login"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#0099cc",
     "navigationBarTitleText": "首页",
     "navigationBarTextStyle":"white",
-    "enablePullDownRefresh": true,
     "backgroundTextStyle":"black"
   },
   "tabBar": {
@@ -24,12 +26,13 @@
       "selectedIconPath":"images/bar/homeHL.png"
     },
     {
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/sendPage/sendPage",
       "text": "发帖",
       "iconPath":"images/bar/edit.png",
       "selectedIconPath":"images/bar/editHL.png"
-    },{
-      "pagePath": "pages/index/index",
+    },
+      {
+      "pagePath": "pages/message/message",
       "text": "消息",
       "iconPath":"images/bar/message.png",
       "selectedIconPath":"images/bar/messageHL.png"

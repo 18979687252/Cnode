@@ -46,13 +46,13 @@
                     <view class="created">{{filter.formatTime(item.create_at)}}</view>
                 </view>
                 <view class="main-item-t-t-item main-item-t-t-r">
-                    点赞
+                    <image class="topic-zan" src="../../images/icon/zan.png" wx:if="!item.is_uped" id="{{item.id}}" bindtap="replyUpsHandler"></image>
+                    <image class="topic-zan" src="../../images/icon/zanhl.png" wx:else></image>
+                    <view>{{item.ups.length}}</view>
                 </view>
             </view>
             <view class="main-item-t-m">
-                <rich-text class="main-item-t-m-title" nodes="{{item.content}}">
-
-                </rich-text>
+                <rich-text class="main-item-t-m-title" nodes="{{item.content}}"></rich-text>
             </view>
         </view>
     </view>

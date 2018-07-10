@@ -1,5 +1,10 @@
 /*nav css*/
 .nav-bar{
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content:center;
@@ -14,12 +19,11 @@
     color: #09c;
   }
 }
-
 /*main css*/
 .main {
   background: #ececec;
-  height:966rpx;
   padding-top:8rpx;
+  margin-top:82rpx;
   .main-item {
     background: #fff;
     margin-bottom:14rpx;
@@ -97,10 +101,11 @@
       }
     }
   }
-  .loadMore{
-    color:#999;
-    font-size:rpx;
-    text-align:center;
-    padding:20rpx;
-  }
+}
+.loadMore{
+  color:#999;
+  font-size:rpx;
+  background:#ececec;
+  text-align:center;
+  padding:20rpx;
 }

@@ -20,6 +20,16 @@ var navList = [
         value: 'job'
     }
 ]
+function getLabel(data){
+    var tempArr = []
+    for(var i in data){
+        if(data[i].value){
+            tempArr.push(data[i].lable)
+        }
+    }
+    return tempArr
+}
 module.exports = {
-    navList
+    navList,
+    getLabel
 }

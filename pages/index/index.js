@@ -17,6 +17,10 @@ Page({
             activeValue:e.target.dataset.value,
             tab:e.target.dataset.value
         },() =>{
+            wx.pageScrollTo({
+                scrollTop: 0,
+                duration: 300
+            })
             that.getAction()
         })
     },
@@ -35,10 +39,13 @@ Page({
         that.setData({
             page:++page
         },() => {
-            that.getAction()
+            setTimeout(()=>{
+                that.getAction()
+            },600)
         })
     },
     getAction(){
+        wx.showLoading({title:''})
         let that = this
         let query = {
             page:that.data.page,
@@ -56,6 +63,7 @@ Page({
                         showLoadMore:false
                     })
                 }
+                wx.hideLoading()
             }
         })
     },

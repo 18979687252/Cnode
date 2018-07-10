@@ -2,9 +2,6 @@
 @import './utils/iconfont.wxss'
 @import "/wxParse/wxParse.wxss"
 .container {
-  height: 100vh;
-  padding:0;
-  margin:0;
   font-size:14px;
   font-family:'Microsoft YaHei', Helvetica, STHeiTi, sans-seri;
   box-sizing: border-box;

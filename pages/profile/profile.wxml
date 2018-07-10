@@ -1,4 +1,30 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <text>我的</text>
+<view class="container">
+    <view class="profile-top"></view>
+    <view class="userInfoWrapper">
+        <navigator url="/pages/login/login">
+            <image class="headImg" src="{{userInfo.avatar_url}}"></image>
+        </navigator>
+        <view class="userDetail">
+            <text wx:if="{{!userInfo.loginname}}">请点击头像登录</text>
+            <view wx:else>
+                <view>{{userInfo.loginname}}</view>
+                <text bindtap="loginOutHandler">[注销]</text>
+            </view>
+        </view>
+    </view>
+    <view class="notice" wx:if="{{!userInfo.loginname}}">
+        <image src="../../images/icon/logo.png"></image>
+        <view>
+            <text>改程序将从CNode获取您的信息，获取您的公开信息（昵称，头像等）,我们保证信息安全，不泄露您的隐私。</text>
+        </view>
+    </view>
+    <view class="main" wx:else>
+        <view class="breakLine"></view>
+        <ul class="tabWrapper">
+            <li class="tab-item {{tabActive == 'topic' ? 'active' : ''}}" data-tabActive="topic" bindtap="tabChangeHandler">主题</li>
+            <li class="tab-item {{tabActive == 'replies' ? 'active' : ''}}" data-tabActive="replies" bindtap="tabChangeHandler">回复</li>
+            <li class="tab-item {{tabActive == 'collect' ? 'active' : ''}}" data-tabActive="collect" bindtap="tabChangeHandler">收藏</li>
+        </ul>
+    </view>
 </view>

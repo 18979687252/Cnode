@@ -1,0 +1,61 @@
+.container {
+  position: relative;
+  .profile-top {
+    height: 200rpx;
+    background: #0099cc;
+  }
+  .userInfoWrapper {
+    text-align: center;
+    padding-bottom:50rpx;
+    .headImg {
+      height: 200rpx;
+      width: 200rpx;
+      background: #eee;
+      border-radius: 100%;
+      position: absolute;
+      left: 50%;
+      top: 110rpx;
+      transform: translateX(-100rpx);
+    }
+    .userDetail{
+      margin-top:120rpx;
+      color:#666;
+    }
+  }
+  .notice{
+    width:480rpx;
+    margin:0 auto;
+    padding:30rpx 0;
+    font-size:30rpx;
+    color:#999;
+    line-height:50rpx;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    image{
+      display: block;
+      margin:0 auto 20rpx;
+      width:300rpx;
+      height:80rpx;
+    }
+  }
+  .main{
+    .breakLine{
+      height:24rpx;
+      background:#eee;
+    }
+    .tabWrapper{
+      display: flex;
+      border-bottom:1px solid #ececec;
+      .tab-item{
+        flex:1;
+        height:64rpx;
+        text-align:center;
+        line-height:64rpx;
+      }
+      .active{
+        background: #09c;
+        color:#fff;
+      }
+    }
+  }
+}
