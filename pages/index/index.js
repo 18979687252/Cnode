@@ -24,6 +24,12 @@ Page({
             that.getAction()
         })
     },
+    onShareAppMessage: function () {
+        return {
+            title: '仿CNode微社区',
+            path: '/page/index/index'
+        }
+    },
     onPullDownRefresh:function() {
         let that = this
         that.setData({
@@ -31,6 +37,7 @@ Page({
             page:1
         },() => {
             that.getAction()
+            wx.stopPullDownRefresh()
         })
     },
     onReachBottom:function(){
