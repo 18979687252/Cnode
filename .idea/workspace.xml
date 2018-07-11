@@ -40,8 +40,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            <state relative-caret-position="599">
+              <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -297,7 +297,7 @@
       <workItem from="1530692712446" duration="88076000" />
       <workItem from="1531211879612" duration="18000" />
       <workItem from="1531215169101" duration="599000" />
-      <workItem from="1531275511697" duration="4097000" />
+      <workItem from="1531275511697" duration="4205000" />
     </task>
     <task id="LOCAL-00001" summary="首页上拉刷新下拉加载，详情页，发帖，token和扫码登录">
       <created>1531211585002</created>
@@ -348,11 +348,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531279467575</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="README更新">
+      <created>1531279614143</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1531279614143</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116477000" />
+    <option name="totallyTimeSpent" value="116585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1183" height="1047" extended-state="0" />
@@ -724,8 +731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        <state relative-caret-position="599">
+          <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
           <folding />
         </state>
       </provider>
