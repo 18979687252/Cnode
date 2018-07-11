@@ -28,7 +28,7 @@
      ```
  * 如果需要使用filter过滤器来对wxml文件的数据进行处理怎么办？(小程序暂时没有filter)
     > 解决办法：借助小程序模块wxs
-    1.自己定义一个filter.wxs文件
+    >> 1.自己定义一个filter.wxs文件
     ```
     var filter = {
          navValueToName:function(value,data){
@@ -44,7 +44,8 @@
        navValueToName:filter.navValueToName
      }
      ```
-    2.在相应的wxml文件内引用filter.wxs,并使用这个模块
+    >> 2.在相应的wxml文件内引用filter.wxs,并使用这个模块
+
     ```<wxs module="filter" src="../../utils/filter.wxs"></wxs>```
 
     ```<text class="main-item-b-item">{{filter.formatTime(item.last_reply_at)}}</text>```
