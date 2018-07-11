@@ -15,7 +15,8 @@ Page({
         let that = this
         that.setData({
             activeValue:e.target.dataset.value,
-            tab:e.target.dataset.value
+            tab:e.target.dataset.value,
+            topicList:[]
         },() =>{
             wx.pageScrollTo({
                 scrollTop: 0,
