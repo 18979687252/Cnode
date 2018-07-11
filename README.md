@@ -45,8 +45,9 @@
      }
      ```
     2.在相应的wxml文件内引用filter.wxs,并使用这个模块
-    `<wxs module="filter" src="../../utils/filter.wxs"></wxs>`
-    `<text class="main-item-b-item">{{filter.formatTime(item.last_reply_at)}}</text>`
+    ```<wxs module="filter" src="../../utils/filter.wxs"></wxs>```
+
+    ```<text class="main-item-b-item">{{filter.formatTime(item.last_reply_at)}}</text>```
  * 页面跳转返回后发现原页面没有重新加载（需要更新数据未更新）；这个因为原页面已经存在于页面栈中，不会再次执行onLoad函数
     > 解决办法：在原页面定义一个更新数据的方法，在跳转后的页面的逻辑层去执行原页面的更新方法。
     ```
