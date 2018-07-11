@@ -1,0 +1,12 @@
+<!-- login.wxml -->
+<view class="container login-item">
+  <image class="login-item-img" mode="scaleToFill" src="/images/icon/logo.png"></image>
+  <view class="login-item-section">
+    <input placeholder="请输入Token" class="login-item-input" bindinput="bindKeyInput"/>
+  </view>
+  <view class="login-item-button">
+    <button type="primary" loading="{{loading}}" class="login-button" bindtap="accesstokenLogin">登录</button>
+  </view>
+  <view class="loginByCode" bindtap="loginByCodeHandler">扫码登录</view>
+  <view class="error-msg" wx:if="{{error}}">{{error}}</view>
+</view>
